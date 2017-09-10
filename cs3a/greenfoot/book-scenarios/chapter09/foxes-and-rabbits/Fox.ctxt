@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Fox()
+comment0.text=\r\n\ Default\ constructor\ for\ testing.\r\n
+comment1.params=randomAge
+comment1.target=Fox(boolean)
+comment1.text=\r\n\ Create\ a\ fox.\ A\ fox\ can\ be\ created\ as\ a\ new\ born\ (age\ zero\r\n\ and\ not\ hungry)\ or\ with\ random\ age.\r\n\ @param\ randomAge\ If\ true,\ the\ fox\ will\ have\ random\ age\ and\ hunger\ level.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ This\ is\ what\ the\ fox\ does\ most\ of\ the\ time\:\ it\ hunts\ for\r\n\ rabbits.\ In\ the\ process,\ it\ might\ breed,\ die\ of\ hunger,\r\n\ or\ die\ of\ old\ age.\r\n
+comment3.params=
+comment3.target=void\ incrementAge()
+comment3.text=\r\n\ Increase\ the\ age.\ This\ could\ result\ in\ the\ fox's\ death.\r\n
+comment4.params=
+comment4.target=void\ incrementHunger()
+comment4.text=\r\n\ Make\ this\ fox\ more\ hungry.\ This\ could\ result\ in\ the\ fox's\ death.\r\n
+comment5.params=
+comment5.target=int\ breed()
+comment5.text=\r\n\ Generate\ a\ number\ representing\ the\ number\ of\ births,\r\n\ if\ it\ can\ breed.\r\n\ Return\ the\ number\ of\ births\ (may\ be\ zero).\r\n
+comment6.params=
+comment6.target=boolean\ canBreed()
+comment6.text=\r\n\ A\ fox\ can\ breed\ if\ it\ has\ reached\ the\ breeding\ age.\r\n
+numComments=7
