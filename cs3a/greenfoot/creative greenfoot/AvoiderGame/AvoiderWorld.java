@@ -10,8 +10,10 @@ public class AvoiderWorld extends World
 {
     private GreenfootSound bgm;
     private Counter scoreBoard;
+    private Counter levelCounter;
     private int enemySpawnRate = 20;
     private int enemySpeed = 1;
+    private int currentLevel = 1;
     private int nextLevel = 50;
 
     /**
@@ -40,7 +42,9 @@ public class AvoiderWorld extends World
         Avatar avatar = new Avatar();
         addObject(avatar, getWidth() / 2, getHeight() / 2);
         scoreBoard = new Counter("Score: ");
-        addObject(scoreBoard, 70, 20);
+        addObject(scoreBoard, 70, 50);
+        levelCounter = new Counter("Level: ");
+        addObject(levelCounter, 70, 20);
     }
 
     public void act() {
@@ -66,6 +70,8 @@ public class AvoiderWorld extends World
         if(score > nextLevel) {
             enemySpawnRate += 2;
             enemySpeed++;
+            currentLevel++;
+            levelCounter.setValue(levelCounter.getValue() + 1);
             nextLevel += 50;
         }
     } 
