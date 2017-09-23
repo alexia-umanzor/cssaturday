@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1b48c52-f92b-416b-b0be-97f276b5dd65" name="Default" comment="" />
+    <list default="true" id="a1b48c52-f92b-416b-b0be-97f276b5dd65" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Avatar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Avatar.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Avatar.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderGame.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderGameIntroScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderGameIntroScreen.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderGameIntroScreen.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderGameOverWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderGameOverWorld.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderGameOverWorld.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderWorld.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/AvoiderWorld.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Counter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Counter.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Counter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Enemy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Enemy.ctxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/Enemy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/logfile.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/resources/inherit.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/doc/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/images/AvoiderGameIntroScreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/images/AvoiderGameOverWorld.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/images/Counter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/images/skull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/images/smiley1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/images/space1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/soundindex.list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/sounds/bgm.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/sounds/death.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/sounds/intro.mp3" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../cs3a/AvoiderGame/project.greenfoot" afterPath="$PROJECT_DIR$/../../cs3a/AvoiderGame/project.greenfoot" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +67,8 @@
       <file leaf-file-name="dragonrealm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dragonrealm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="34">
+              <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
               <folding>
                 <element signature="e#533#546#0" expanded="true" />
               </folding>
@@ -91,7 +134,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/turtle" />
     <property name="full.screen.before.presentation.mode" value="false" />
   </component>
@@ -260,11 +303,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1337953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13486141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.482684" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.482684" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -314,6 +358,24 @@
     <entry file="file://$PROJECT_DIR$/dragonrealm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="e#533#546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/joke.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="81" column="25" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dragonrealm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
           <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
           <folding>
             <element signature="e#533#546#0" expanded="true" />
@@ -349,8 +411,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dragonrealm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="34">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
           <folding>
             <element signature="e#533#546#0" expanded="true" />
           </folding>
