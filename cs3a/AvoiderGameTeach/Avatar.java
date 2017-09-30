@@ -16,6 +16,7 @@ public class Avatar extends Actor
     {
         // Add your action code here.
         followMouse();
+        checkForCollisions();
     }  
     
     private void followMouse() {
@@ -23,5 +24,13 @@ public class Avatar extends Actor
         if(mi != null) {
             setLocation(mi.getX(), mi.getY());
         }
+    }
+    
+    private void checkForCollisions() {
+        Actor enemy = getOneIntersectingObject(Enemy.class);
+        if(enemy != null) {
+            AvoiderGameWorld world = (AvoiderGameWorld) getWorld();
+            world.endGame();
+        } 
     }
 }

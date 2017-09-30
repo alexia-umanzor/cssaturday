@@ -33,7 +33,8 @@ public class AvoiderGameWorld extends World
         addObject(a, 300, 350);
     }
     
-    public void printstuff() {
-        System.out.println("Hello!");
+    public void endGame() {
+        AvoiderGameOverWorld go = new AvoiderGameOverWorld();
+        Greenfoot.setWorld(go);
     }
 }
