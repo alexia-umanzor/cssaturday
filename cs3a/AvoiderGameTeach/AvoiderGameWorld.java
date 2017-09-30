@@ -17,6 +17,7 @@ public class AvoiderGameWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
+        setAvatar();
     }
     
     public void act() {
@@ -25,5 +26,14 @@ public class AvoiderGameWorld extends World
             Enemy e = new Enemy();
             addObject(e, Greenfoot.getRandomNumber(getWidth() - 20) + 10, -30);
         }
+    }
+    
+    private void setAvatar() {
+        Avatar a = new Avatar();
+        addObject(a, 300, 350);
+    }
+    
+    public void printstuff() {
+        System.out.println("Hello!");
     }
 }
