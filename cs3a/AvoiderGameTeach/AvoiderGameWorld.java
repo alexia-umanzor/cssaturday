@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class AvoiderGameWorld extends World
 {
-    //Instance Variable / Fields
-    GreenfootSound bgmusic;
+    //Instance Variables / Fields
+    private GreenfootSound bgmusic;
     
     /**
      * Constructor for objects of class AvoiderGameWorld.
@@ -38,8 +38,8 @@ public class AvoiderGameWorld extends World
     }
     
     public void endGame() {
-        AvoiderGameOverWorld go = new AvoiderGameOverWorld();
         bgmusic.stop();
+        AvoiderGameOverWorld go = new AvoiderGameOverWorld();
         Greenfoot.setWorld(go);
     }
 }
