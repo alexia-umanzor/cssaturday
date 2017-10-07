@@ -8,7 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class AvoiderGameWorld extends World
 {
-
+    //Instance Variable / Fields
+    GreenfootSound bgmusic;
+    
     /**
      * Constructor for objects of class AvoiderGameWorld.
      * 
@@ -17,7 +19,9 @@ public class AvoiderGameWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
-        setAvatar();
+        setAvatar(); 
+        bgmusic = new GreenfootSound("sounds/clotho.mp3");
+        bgmusic.playLoop();
     }
     
     public void act() {
@@ -35,6 +39,7 @@ public class AvoiderGameWorld extends World
     
     public void endGame() {
         AvoiderGameOverWorld go = new AvoiderGameOverWorld();
+        bgmusic.stop();
         Greenfoot.setWorld(go);
     }
 }
