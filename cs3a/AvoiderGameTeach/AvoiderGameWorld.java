@@ -22,6 +22,7 @@ public class AvoiderGameWorld extends World
         setAvatar(); 
         bgmusic = new GreenfootSound("sounds/clotho.mp3");
         bgmusic.playLoop();
+        System.out.print("Hi!");
     }
     
     public void act() {
