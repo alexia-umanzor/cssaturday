@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Sat Oct 14 10:23:57 PDT 2017
+#Sat Oct 14 10:29:18 PDT 2017
 target4.type=ClassTarget
 dependency3.from=AvoiderGameWorld
 target3.height=50
@@ -13,7 +13,7 @@ class.Enemy.superclass=greenfoot.Actor
 class.Avatar.superclass=greenfoot.Actor
 target4.typeParameters=
 readme.width=47
-editor.fx.0.width=0
+editor.fx.0.width=815
 target1.height=50
 target5.type=ClassTarget
 class.AvoiderGameWorld.superclass=greenfoot.World
@@ -33,8 +33,8 @@ dependency5.from=AvoiderGameWorld
 dependency2.to=AvoiderGameWorld
 target1.width=80
 dependency5.type=UsesDependency
-editor.fx.0.y=0
-editor.fx.0.x=0
+editor.fx.0.y=104
+editor.fx.0.x=427
 target2.typeParameters=
 dependency3.to=Enemy
 target3.showInterface=false
@@ -64,12 +64,12 @@ dependency7.type=UsesDependency
 target2.type=ClassTarget
 target2.y=0
 target2.x=0
-mainWindow.y=123
-mainWindow.x=333
+mainWindow.y=122
+mainWindow.x=151
 dependency1.from=AvoiderGameOverWorld
 target5.width=80
 target1.y=0
-editor.fx.0.height=0
+editor.fx.0.height=747
 target1.x=0
 dependency1.type=UsesDependency
 readme.height=58
