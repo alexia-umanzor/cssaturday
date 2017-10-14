@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Enemy extends Actor
 {
+    //Instructor
+    private int speed;
+   
     /**
      * Act - do whatever the Enemy wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -15,8 +18,9 @@ public class Enemy extends Actor
     public void act() 
     {
         // Add your action code here.
-        setLocation(getX(), getY() + 1);
+        setLocation(getX(), getY() + speed);
         checkRemove();
+        turn(5);
     }    
     
     private void checkRemove() {
@@ -24,5 +28,9 @@ public class Enemy extends Actor
         if(getY() > w.getHeight() + 30) {
             w.removeObject(this);
         }
+    }
+    
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 }
