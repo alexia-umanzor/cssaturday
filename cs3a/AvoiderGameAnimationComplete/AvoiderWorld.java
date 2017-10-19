@@ -76,13 +76,13 @@ public class AvoiderWorld extends World
             GreenfootImage image = s.getImage();
             if( Greenfoot.getRandomNumber(1000) < 300) {
                 // this is a close bright star
-                s.setSpeed(3);
+                s.setSpeed(4);
                 image.setTransparency(Greenfoot.getRandomNumber(25) + 225);
                 image.scale(4, 4);
             }
             else {
                 // this is a further dim star
-                s.setSpeed(4);
+                s.setSpeed(3);
                 image.setTransparency(Greenfoot.getRandomNumber(50) + 100);
                 image.scale(2, 2);
             }
