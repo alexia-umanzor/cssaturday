@@ -29,6 +29,10 @@ public class Avatar extends Actor
         }
     }
     
+    public int getHealth() {
+        return health;
+    }
+    
     private void checkForCollisions() {
         Actor enemy = getOneIntersectingObject(Enemy.class);
         if(hitDelay == 0 && enemy != null) {
@@ -50,6 +54,8 @@ public class Avatar extends Actor
             }
             health--;
             hitDelay = 50;
+            AvoiderWorld world = (AvoiderWorld) getWorld();
+            world.updateHealthCounter();
         }
         if(hitDelay > 0) {
             hitDelay--;

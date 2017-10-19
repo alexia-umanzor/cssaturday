@@ -11,11 +11,13 @@ public class AvoiderWorld extends World
     private GreenfootSound bgm;
     private Counter scoreBoard;
     private Counter levelCounter;
+    private Counter healthCounter;
     private int enemySpawnRate = 20;
     private int enemySpeed = 2;
     private int currentLevel = 1;
     private int nextLevel = 50;
-
+    private Avatar avatar;
+    
     /**
      * Constructor for objects of class AvoiderWorld.
      * 
@@ -41,13 +43,16 @@ public class AvoiderWorld extends World
      */
     private void prepare()
     {
-        Avatar avatar = new Avatar();
+        avatar = new Avatar();
         addObject(avatar, getWidth() / 2, getHeight() / 2);
         scoreBoard = new Counter("Score: ");
         addObject(scoreBoard, 70, 50);
         levelCounter = new Counter("Level: ");
         levelCounter.setValue(1);
         addObject(levelCounter, 70, 20);
+        healthCounter = new Counter("Lives: ");
+        healthCounter.setValue(avatar.getHealth());
+        addObject(healthCounter, 70, 80);
     }
 
     public void act() {
@@ -113,4 +118,8 @@ public class AvoiderWorld extends World
             nextLevel += 50;
         }
     } 
+    
+    public void updateHealthCounter() {
+        healthCounter.setValue(avatar.getHealth());
+    }
 }
