@@ -1,4 +1,7 @@
 #Greenfoot project file
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=1b2ff37a99249015f1b2cc7aff4ad089b4fb737f
 class.Avatar.image=skull.png
 class.Avatar.superclass=greenfoot.Actor
 class.AvoiderGameIntroScreen.image=AvoiderGameIntroScreen.png
@@ -38,25 +41,14 @@ dependency8.type=UsesDependency
 dependency9.from=Avatar
 dependency9.to=AvoiderWorld
 dependency9.type=UsesDependency
-<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
-mainWindow.height=775
-mainWindow.width=979
-mainWindow.x=553
-mainWindow.y=306
-=======
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=-32000
-editor.fx.0.y=-32000
 mainWindow.height=707
 mainWindow.width=965
 mainWindow.x=148
 mainWindow.y=193
->>>>>>> 1b2ff37a99249015f1b2cc7aff4ad089b4fb737f
 package.numDependencies=8
 package.numTargets=6
 project.charset=UTF-8
