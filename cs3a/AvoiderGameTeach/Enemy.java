@@ -29,8 +29,12 @@ public class Enemy extends Actor
             w.removeObject(this);
         }
     }
+<<<<<<< HEAD
+}
+=======
     
     public void setSpeed(int speed) {
         this.speed = speed;
     }
 }
+>>>>>>> de1ac7b96fd9992de0a5ea3066c846bf0fcdb2d5
