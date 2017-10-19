@@ -47,13 +47,8 @@ editor.fx.0.x=0
 editor.fx.0.y=0
 mainWindow.height=707
 mainWindow.width=965
-<<<<<<< HEAD
-mainWindow.x=148
-mainWindow.y=193
-=======
 mainWindow.x=-21
 mainWindow.y=180
->>>>>>> de1ac7b96fd9992de0a5ea3066c846bf0fcdb2d5
 package.numDependencies=8
 package.numTargets=6
 project.charset=UTF-8

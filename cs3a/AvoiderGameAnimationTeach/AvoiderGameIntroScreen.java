@@ -1,39 +1,36 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class AvoiderGameIntroWorld here.
+ * Write a description of class AvoiderGameIntroScreen here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class AvoiderGameIntroWorld extends World
+public class AvoiderGameIntroScreen extends World
 {
-
-    //INSTANCE VARIABLES
     private GreenfootSound introMusic;
-    private boolean playedMusicYet;
-    
+    private boolean introPlayed; 
     /**
-     * Constructor for objects of class AvoiderGameIntroWorld.
+     * Constructor for objects of class AvoiderGameIntroScreen.
      * 
      */
-    public AvoiderGameIntroWorld()
+    public AvoiderGameIntroScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         introMusic = new GreenfootSound("sounds/intro.mp3");
-        playedMusicYet = false;
+        introPlayed = false;
     }
-    
+
     public void act() {
-        // Restart the game if the user clicks the mouse anywhere
-        if(!playedMusicYet) {
+        if(!introPlayed) {
             introMusic.play();
-            playedMusicYet = true;
+            introPlayed = true;
         }
+        //Start the game if the user clicks the mouse anywhere
         if(Greenfoot.mouseClicked(this)) {
             introMusic.stop();
-            AvoiderGameWorld world = new AvoiderGameWorld();
+            AvoiderWorld world = new AvoiderWorld();
             Greenfoot.setWorld(world);
         }
     }
