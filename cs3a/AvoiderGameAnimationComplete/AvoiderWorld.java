@@ -24,13 +24,15 @@ public class AvoiderWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
-
+        setPaintOrder(Avatar.class, Enemy.class, Counter.class);
+        
         // Initialize the music
         bgm = new GreenfootSound("sounds/bgm.mp3"); // Music credit: Contra (NES) by Konami
         bgm.playLoop(); // Play the music
 
         // Add the player and scoreboard to the world
         prepare();
+        generateInitialStarField();
     }
     
     /**
@@ -49,7 +51,16 @@ public class AvoiderWorld extends World
     }
 
     public void act() {
-        // Randomly add enemies to the world
+        generateEnemies();
+        generateStars(-1);
+        increaseLevel();
+    }
+    
+    /**
+     * Randomly add enemies to the world.
+     */
+    
+    private void generateEnemies() {
         if(Greenfoot.getRandomNumber(1000) < 20) {
             Enemy e = new Enemy();
             e.setSpeed(enemySpeed);
@@ -57,7 +68,33 @@ public class AvoiderWorld extends World
             // Give us some points for facing yet another enemy
             scoreBoard.setValue(scoreBoard.getValue() + 1);
         }
-        increaseLevel();
+    }
+    
+    private void generateStars(int yLoc) {
+        if(Greenfoot.getRandomNumber(1000) < 350) {
+            Star s = new Star();
+            GreenfootImage image = s.getImage();
+            if( Greenfoot.getRandomNumber(1000) < 300) {
+                // this is a close bright star
+                s.setSpeed(3);
+                image.setTransparency(Greenfoot.getRandomNumber(25) + 225);
+                image.scale(4, 4);
+            }
+            else {
+                // this is a further dim star
+                s.setSpeed(4);
+                image.setTransparency(Greenfoot.getRandomNumber(50) + 100);
+                image.scale(2, 2);
+            }
+            s.setImage(image);
+            addObject(s, Greenfoot.getRandomNumber(getWidth() - 20) + 10, yLoc);
+        }
+    }
+    
+    private void generateInitialStarField() {
+        for(int i = 0; i < getHeight(); i++) {
+            generateStars(i);
+        }
     }
 
     public void endGame() {
