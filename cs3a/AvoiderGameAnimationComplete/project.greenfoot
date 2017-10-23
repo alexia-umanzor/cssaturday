@@ -42,6 +42,7 @@ dependency8.type=UsesDependency
 dependency9.from=Avatar
 dependency9.to=AvoiderWorld
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -50,6 +51,16 @@ mainWindow.height=684
 mainWindow.width=965
 mainWindow.x=1870
 mainWindow.y=7
+=======
+editor.fx.0.height=739
+editor.fx.0.width=690
+editor.fx.0.x=368
+editor.fx.0.y=246
+mainWindow.height=684
+mainWindow.width=965
+mainWindow.x=248
+mainWindow.y=208
+>>>>>>> 148a7d6d6b5b927d52942bc818220fbe98518f1f
 package.numDependencies=9
 package.numTargets=7
 project.charset=UTF-8
