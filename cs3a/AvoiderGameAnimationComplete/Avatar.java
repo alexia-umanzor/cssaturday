@@ -11,6 +11,9 @@ public class Avatar extends Actor
     //Instance variables
     private int health = 3;
     private int hitDelay = 0;
+    private Eye leftEye;
+    private Eye rightEye;
+    private int stunDelay = -1;
     
     /**
      * Act - do whatever the Avatar wants to do. This method is called whenever
@@ -24,9 +27,20 @@ public class Avatar extends Actor
     
     private void followMouse() {
         MouseInfo mi = Greenfoot.getMouseInfo();
-        if(mi != null) {
-            setLocation(mi.getX(), mi.getY());
+        if(stunDelay < 0) {
+            if(mi != null) {
+                setLocation(mi.getX(), mi.getY());
+                leftEye.setLocation(getX() - 10, getY() - 8);
+                rightEye.setLocation(getX() + 10, getY() - 8);
+            }
         }
+        else {
+            stunDelay--;
+        }
+    }
+    
+    public void stun() {
+        stunDelay = 50;
     }
     
     public int getHealth() {
@@ -62,4 +76,11 @@ public class Avatar extends Actor
         }
     }
     
+    @Override
+    protected void addedToWorld(World w) {
+        leftEye = new Eye();
+        rightEye = new Eye();
+        w.addObject(leftEye, getX() - 10, getY() - 8);
+        w.addObject(rightEye, getX() + 10, getY() - 8);
+    }
 }

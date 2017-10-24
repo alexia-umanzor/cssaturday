@@ -13,10 +13,7 @@ public class Star extends Actor
     private int currentTransparency = 0;
     
     public Star() {
-        GreenfootImage img = new GreenfootImage(10, 10);
-        img.setColor(Color.WHITE);
-        img.fillOval(0, 0, 10, 10);
-        setImage(img);
+        drawStar();
     }
     
     /**
@@ -56,5 +53,12 @@ public class Star extends Actor
     
     public void setSpeed(int s) {
         speed = s;
+    }
+    
+    private void drawStar() {
+        GreenfootImage img = new GreenfootImage(10, 10);
+        img.setColor(Color.WHITE);
+        img.fillOval(0, 0, 10, 10);
+        setImage(img);
     }
 }

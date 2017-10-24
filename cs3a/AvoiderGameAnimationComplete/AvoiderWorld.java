@@ -26,7 +26,7 @@ public class AvoiderWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
-        setPaintOrder(Avatar.class, Enemy.class, Counter.class);
+        setPaintOrder(Eye.class, Avatar.class, Enemy.class, Counter.class);
         
         // Initialize the music
         bgm = new GreenfootSound("sounds/bgm.mp3"); // Music credit: Contra (NES) by Konami
