@@ -14,6 +14,9 @@ public class Avatar extends Actor
     private Eye leftEye;
     private Eye rightEye;
     private int stunDelay = -1;
+    private int lagDelay = -1;
+    private int hitBlinkTime = 0;
+    private int currentTransparency = 255;
     
     /**
      * Act - do whatever the Avatar wants to do. This method is called whenever
@@ -29,7 +32,15 @@ public class Avatar extends Actor
         MouseInfo mi = Greenfoot.getMouseInfo();
         if(stunDelay < 0) {
             if(mi != null) {
-                setLocation(mi.getX(), mi.getY());
+                if(lagDelay > 0) {
+                    int stepX = (mi.getX() - getX()) / 40;
+                    int stepY = (mi.getY() - getY()) / 40;
+                    setLocation(stepX + getX(), stepY + getY());
+                    lagDelay--;
+                }
+                else {
+                    setLocation(mi.getX(), mi.getY());
+                }
                 leftEye.setLocation(getX() - 10, getY() - 8);
                 rightEye.setLocation(getX() + 10, getY() - 8);
             }
@@ -43,14 +54,36 @@ public class Avatar extends Actor
         stunDelay = 50;
     }
     
+    public void lagControls() {
+        lagDelay = 150;
+    }
+    
     public int getHealth() {
         return health;
+    }
+    
+    public void addHealth() {
+        if(health < 3) {
+            switch(health){
+                case 2:
+                    setImage("skull.png");
+                    break;
+                case 1:
+                    setImage("skull1.png");
+                    break;
+                default: //The only other option would be if they have 0 health.
+                    setImage("skull2.png");
+                    break;
+            }
+            health++;
+            AvoiderWorld world = (AvoiderWorld) getWorld();
+            world.updateHealthCounter();
+        }
     }
     
     private void checkForCollisions() {
         Actor enemy = getOneIntersectingObject(Enemy.class);
         if(hitDelay == 0 && enemy != null) {
-            //System.out.println("My health is " + health);
             switch(health){
                 case 3:
                     setImage("skull1.png");
@@ -73,6 +106,28 @@ public class Avatar extends Actor
         }
         if(hitDelay > 0) {
             hitDelay--;
+            blinkMe();
+        }
+    }
+    
+    private void blinkMe() {
+        GreenfootImage img = getImage();
+        GreenfootImage leftEyeImg = leftEye.getImage();
+        GreenfootImage rightEyeImg = rightEye.getImage();
+        if(hitDelay % 2 == 0) { //blink on all "even" numbers
+            img.setTransparency(0);
+            leftEyeImg.setTransparency(0);
+            rightEyeImg.setTransparency(0);
+        }
+        else{
+            img.setTransparency(currentTransparency);
+            leftEyeImg.setTransparency(currentTransparency);
+            rightEyeImg.setTransparency(currentTransparency);
+        }
+        if(hitDelay == 0) {
+            img.setTransparency(currentTransparency);
+            leftEyeImg.setTransparency(currentTransparency);
+            rightEyeImg.setTransparency(currentTransparency);
         }
     }
     
