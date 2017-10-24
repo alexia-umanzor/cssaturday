@@ -114,17 +114,17 @@ public class Avatar extends Actor
         GreenfootImage img = getImage();
         GreenfootImage leftEyeImg = leftEye.getImage();
         GreenfootImage rightEyeImg = rightEye.getImage();
-        if(hitDelay % 2 == 0) { //blink on all "even" numbers
+        if(hitDelay == 0) {
+            img.setTransparency(currentTransparency);
+            leftEyeImg.setTransparency(currentTransparency);
+            rightEyeImg.setTransparency(currentTransparency);
+        }
+        else if(hitDelay % 2 == 0) { //blink on all "even" numbers
             img.setTransparency(0);
             leftEyeImg.setTransparency(0);
             rightEyeImg.setTransparency(0);
         }
         else{
-            img.setTransparency(currentTransparency);
-            leftEyeImg.setTransparency(currentTransparency);
-            rightEyeImg.setTransparency(currentTransparency);
-        }
-        if(hitDelay == 0) {
             img.setTransparency(currentTransparency);
             leftEyeImg.setTransparency(currentTransparency);
             rightEyeImg.setTransparency(currentTransparency);
