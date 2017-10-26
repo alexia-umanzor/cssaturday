@@ -17,6 +17,9 @@ public class AvoiderWorld extends World
     private int currentLevel = 1;
     private int nextLevel = 50;
     private Avatar avatar;
+    private int cupcakeFrequency = 10;
+    private int cloverFrequency = 10;
+    private int rockFrequency = 1;
     
     /**
      * Constructor for objects of class AvoiderWorld.
@@ -58,6 +61,7 @@ public class AvoiderWorld extends World
     public void act() {
         generateEnemies();
         generateStars(-1);
+        generatePowerItems();
         increaseLevel();
     }
     
@@ -96,6 +100,38 @@ public class AvoiderWorld extends World
         }
     }
     
+    private void generatePowerItems() {
+        generatePowerItem(0, cupcakeFrequency); //new Cupcake
+        generatePowerItem(1, cloverFrequency);
+        generatePowerItem(2, rockFrequency);
+    }
+    
+    private void generatePowerItem(int type, int freq) {
+        if(Greenfoot.getRandomNumber(1000) < freq) {
+            int targetX = Greenfoot.getRandomNumber(getWidth() - 80) + 40;
+            int targetY = Greenfoot.getRandomNumber(getHeight() / 2) + 20;
+            Actor a = createPowerItem(type, targetX, targetY, 100);
+            if(Greenfoot.getRandomNumber(100) < 50) {
+                addObject(a, getWidth() + 20, Greenfoot.getRandomNumber(getHeight() / 2) + 30);
+            }
+            else {
+                addObject(a, -20, Greenfoot.getRandomNumber(getHeight() / 2) + 30);
+            }
+        }
+    }
+    
+    private Actor createPowerItem(int type, int targetX, int targetY, int expireTime) {
+        switch(type){
+            case 0:
+                return new Cupcake(targetX, targetY, expireTime);
+            case 1:
+                return new Clover(targetX, targetY, expireTime);
+            case 2: 
+                return new Rock(targetX, targetY, expireTime);
+        }
+        return null;
+    }
+    
     private void generateInitialStarField() {
         for(int i = 0; i < getHeight(); i++) {
             generateStars(i);
@@ -113,6 +149,9 @@ public class AvoiderWorld extends World
         if(score >= nextLevel) {
             enemySpawnRate += 2;
             enemySpeed++;
+            cupcakeFrequency += 3;
+            cloverFrequency += 3;
+            rockFrequency += 2;
             currentLevel++;
             levelCounter.setValue(levelCounter.getValue() + 1);
             nextLevel += 50;
